@@ -19,7 +19,7 @@ function ExpenseItem( props ) {
             </div>
             <div className="flex flex-row items-center justify-between">
                 {/* <h2>{props.id}</h2> */}
-                <h2 className="mr-10">{title}</h2>
+                <h2 className="mr-10">{props.title}</h2>
                 <div className="bg-purple-500 p-4 rounded-full flex flex-row items-end justify-end mr-2">
                     {props.amount.toLocaleString( 'en-US', { style: 'currency', currency: 'INR' } )}
                 </div>
