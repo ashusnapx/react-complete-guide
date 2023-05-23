@@ -3,9 +3,9 @@
 function ExpenseDate( props ) {
 
     /* Extract Day */
-    const day = props.date.toLocaleString( 'en_US', {
-        weekday: "long"
-    } );
+    // const day = props.date.toLocaleString( 'en_US', {
+    //     weekday: "long"
+    // } );
 
     /* Extract Date */
     const date = props.date.toLocaleString( 'en-US', {
@@ -21,7 +21,7 @@ function ExpenseDate( props ) {
     const year = props.date.getFullYear();
   return (
     <div>
-          <div>{day} {month} {year}</div>
+      <div>{date} {month} {year}</div>
     </div>
   )
 }
